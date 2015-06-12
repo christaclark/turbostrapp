@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>TURBOSTRAPP</title>
+
+        <meta name="description" content="TURBO-STRAPP: An app that delivers accurate results through heart rate, personal metrics, and the MET computation table.">
+        <meta name="robots" content="noindex, nofollow">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
+        <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
+        <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
+        <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
+        <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
+        <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
+        <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+        <link rel="apple-touch-icon" href="img/icon180.png" sizes="180x180">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Bootstrap is included in its original form, unaltered -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Related styles of various icon packs and plugins -->
+        <link rel="stylesheet" href="css/plugins.css">
+
+        <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+
+        <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+        <link rel="stylesheet" href="css/themes.css">
+        <!-- END Stylesheets -->
+
+        <!-- Modernizr (browser feature detection library) & Respond.js (enables responsive CSS code on browsers that don't support it, eg IE8) -->
+        <script src="js/vendor/modernizr-respond.min.js"></script>
+    </head>
+    <body>
+        <!-- Page Wrapper -->
+        <!-- In the PHP version you can set the following options from inc/config file -->
+        <!--
+            Available classes:
+
+            'page-loading'      enables page preloader
+        -->
+        <div id="page-wrapper">
+            <!-- Preloader -->
+            <!-- Preloader functionality (initialized in js/app.js) - pageLoading() -->
+            <!-- Used only if page preloader is enabled from inc/config (PHP version) or the class 'page-loading' is added in #page-wrapper element (HTML version) -->
+            <div class="preloader themed-background">
+                <h1 class="push-top-bottom text-light text-center">TURBSTR<strong>APP</strong></h1>
+                <div class="inner">
+                    <h3 class="text-light visible-lt-ie9 visible-lt-ie10"><strong>Loading..</strong></h3>
+                    <div class="preloader-spinner hidden-lt-ie9 hidden-lt-ie10"></div>
+                </div>
+            </div>
+            <!-- END Preloader -->
+
+            <!-- Page Container -->
+            <!-- In the PHP version you can set the following options from inc/config file -->
+            <!--
+                Available #page-container classes:
+
+                '' (None)                                       for a full main and alternative sidebar hidden by default (> 991px)
+
+                'sidebar-visible-lg'                            for a full main sidebar visible by default (> 991px)
+                'sidebar-partial'                               for a partial main sidebar which opens on mouse hover, hidden by default (> 991px)
+                'sidebar-partial sidebar-visible-lg'            for a partial main sidebar which opens on mouse hover, visible by default (> 991px)
+                'sidebar-mini sidebar-visible-lg-mini'          for a mini main sidebar with a flyout menu, enabled by default (> 991px + Best with static layout)
+                'sidebar-mini sidebar-visible-lg'               for a mini main sidebar with a flyout menu, disabled by default (> 991px + Best with static layout)
+
+                'sidebar-alt-visible-lg'                        for a full alternative sidebar visible by default (> 991px)
+                'sidebar-alt-partial'                           for a partial alternative sidebar which opens on mouse hover, hidden by default (> 991px)
+                'sidebar-alt-partial sidebar-alt-visible-lg'    for a partial alternative sidebar which opens on mouse hover, visible by default (> 991px)
+
+                'sidebar-partial sidebar-alt-partial'           for both sidebars partial which open on mouse hover, hidden by default (> 991px)
+
+                'sidebar-no-animations'                         add this as extra for disabling sidebar animations on large screens (> 991px) - Better performance with heavy pages!
+
+                'style-alt'                                     for an alternative main style (without it: the default style)
+                'footer-fixed'                                  for a fixed footer (without it: a static footer)
+
+                'disable-menu-autoscroll'                       add this to disable the main menu auto scrolling when opening a submenu
+
+                'header-fixed-top'                              has to be added only if the class 'navbar-fixed-top' was added on header.navbar
+                'header-fixed-bottom'                           has to be added only if the class 'navbar-fixed-bottom' was added on header.navbar
+
+                'enable-cookies'                                enables cookies for remembering active color theme when changed from the sidebar links
+            -->
+            <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations">
+                <!-- Main Sidebar -->
+                <div id="sidebar">
+                    <!-- Wrapper for scrolling functionality -->
+                    <div id="sidebar-scroll">
+                        <!-- Sidebar Content -->
+                        <div class="sidebar-content">
+                            <!-- Brand -->
+                            <a href="index.html" class="sidebar-brand">
+                                <img src="img/logo.png" style="max-width:190px;">
+                            </a>
+                            <!-- END Brand -->
+
+                            <!-- User Info -->
+                            <div class="sidebar-section sidebar-user clearfix sidebar-nav-mini-hide">
+                                <div class="sidebar-user-avatar">
+                                    <a href="page_ready_user_profile.html">
+                                        <img src="img/placeholders/avatars/person.png" alt="avatar">
+                                    </a>
+                                </div>
+                                <div class="sidebar-user-name">Example Trainer</div>
+                            
+                            </div>
+                            <!-- END User Info -->
+
+                             <!-- Sidebar Navigation -->
+                            <ul class="sidebar-nav">
+                                <li>
+                                    <a href="index.html"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                </li>
+                                 <li>
+                                    <a href="members.html"><i class="gi gi-charts sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Members</span></a>
+                                </li>
+
+                                <li>
+                                    
+                                    <a class="sidebar-nav-menu"><i class="fa fa-cog sidebar-nav-icon"> </i><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><span class="sidebar-nav-mini-hide">Message Center</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="messages.html"><i class="gi gi-inbox sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Inbox</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="share.html"><i class="fa fa-share sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Share</span></a>
+                                        </li>
+                                        <li>
+                                           <a href="invites.html"><i class="gi gi-share_alt sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Invite</span></a>
+                                        </li> 
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <a href="order.html"><i class="gi gi-shop sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Order</span></a>
+                                </li>
+                                <li>
+                                    <a class="sidebar-nav-menu"><i class="fa fa-cog sidebar-nav-icon"> </i><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><span class="sidebar-nav-mini-hide">Settings</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#modal-user-settings" data-toggle="modal">
+                                            Personal Information</a>
+                                        </li>
+                                        <li>
+                                            <a>Total Clients: 40</a>
+                                        </li>
+                                        <li>
+                                            <a>Total Costs: $900</a>
+                                        </li> 
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- END Sidebar Navigation -->
+
+                            
+                             <!-- Sidebar Notifications -->
+                            <div class="sidebar-header sidebar-nav-mini-hide">
+                                <span class="sidebar-header-options clearfix">
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Refresh"><i class="gi gi-refresh"></i></a>
+                                </span>
+                                <span class="sidebar-header-title">Activity</span>
+                            </div>
+                            <div class="sidebar-section sidebar-nav-mini-hide">
+                                <div class="alert alert-success alert-alt">
+                                    <small>30 min ago</small><br>
+                                    <i class="fa fa-thumbs-up fa-fw"></i> You had a new signup
+                                </div>
+                                <div class="alert alert-info alert-alt">
+                                    <small>2 hours ago</small><br>
+                                    <i class="fa fa-inbox fa-fw"></i> You have a new message
+                                </div>
+                                <div class="alert alert-warning alert-alt">
+                                    <small>3 hours ago</small><br>
+                                    <i class="fa fa-thumbs-up fa-fw"></i> You had a new signup
+                                </div>
+                                <div class="alert alert-danger alert-alt">
+                                    <small>Yesterday</small><br>
+                                    <i class="fa fa-thumbs-up fa-fw"></i> You had a new signup
+                                </div>
+                            </div>
+                            <!-- END Sidebar Notifications -->
+                        </div>
+                        <!-- END Sidebar Content -->
+                    </div>
+                    <!-- END Wrapper for scrolling functionality -->
+                </div>
+                <!-- END Main Sidebar -->
+
+                <!-- Main Container -->
+                <div id="main-container">
+                    <!-- Header -->
+                    <!-- In the PHP version you can set the following options from inc/config file -->
+                    <!--
+                        Available header.navbar classes:
+
+                        'navbar-default'            for the default light header
+                        'navbar-inverse'            for an alternative dark header
+
+                        'navbar-fixed-top'          for a top fixed header (fixed sidebars with scroll will be auto initialized, functionality can be found in js/app.js - handleSidebar())
+                            'header-fixed-top'      has to be added on #page-container only if the class 'navbar-fixed-top' was added
+
+                        'navbar-fixed-bottom'       for a bottom fixed header (fixed sidebars with scroll will be auto initialized, functionality can be found in js/app.js - handleSidebar()))
+                            'header-fixed-bottom'   has to be added on #page-container only if the class 'navbar-fixed-bottom' was added
+                    -->
+                    <header class="navbar navbar-default">
+                        <!-- Left Header Navigation -->
+                        <ul class="nav navbar-nav-custom">
+                            <!-- Main Sidebar Toggle Button -->
+                            <li>
+                                <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar');this.blur();">
+                                    <i class="fa fa-bars fa-fw"></i>
+                                </a>
+                            </li>
+                            <!-- END Main Sidebar Toggle Button -->
+                        </ul>
+                        <!-- END Left Header Navigation -->
+
+                        <!-- Search Form -->
+                        <form action="page_ready_search_results.html" method="post" class="navbar-form-custom" role="search">
+                            <div class="form-group">
+                                <input type="text" id="top-search" name="top-search" class="form-control" placeholder="Search..">
+                            </div>
+                        </form>
+                        <!-- END Search Form -->
+
+                        
+                    </header>
+                    <!-- END Header -->
+
+                    <!-- Page content -->
+                    <div id="page-content">
+           
+                        <!-- Charts Header -->
+                        <div class="content-header">
+                            <div class="header-section">
+                                <h1>Order</h1>
+                            </div>
+                        </div>
+                       
+                        <!-- END Charts Header -->
+
+                        <!--  Memeber info Block -->
+                    <div class="col-md-12">   
+                            <!-- END  Memeber info Title -->
+                        <div class="row">    
+                                <div class="col-lg-6 col-sm-12 store-item">
+                                 
+                                           <a href="checkout.html"><img src="img/turbostrapp.png" class="img-store"></a>
+                                   
+                                    <div class="store-item-info">
+                                        <div class="col-md-10 col-sm-12 store-item-label">TurboSTRAPP</div>
+                                        <div class="col-md-2 col-xs-12">
+                                            <a href="checkout.html"><button type="button"  class="btn btn-warning store"> Buy</button></a> </div>
+                                        <div class="col-sm-12 store-item-price">$99.99</div>
+                                        <div class="col-sm-12 store">21% OFF!</div>
+                                    </div>
+                                </div>  
+
+                                <div class="col-lg-6 col-sm-12 store-item">
+                                           <a href="checkout.html"><img src="img/kit.png" class="img-store"></a>
+                                     <div class="store-item-info">
+                                        <div class="col-sm-10 store-item-label">Wearable Sports Package</div>
+                                        <div class="col-md-2 col-xs-12">
+                                            <a href="checkout.html"><button type="button"  class="btn btn-warning store"> Buy</button></a> </div>
+                                        <div class="col-md-12 store-item-price">$119.50</div>
+                                        <div class="col-sm-12 store">21% OFF!</div>
+                                    </div>
+                                </div>
+                        </div><!-- END  row -->
+                        <div class="row">    
+                          
+                                <div class="col-lg-6 col-sm-12 store-item">
+                                   
+                                           <a href="checkout.html"><img src="img/armband.png" class="img-store"></a>
+                                
+                                    <div class="store-item-info">
+                                        <div class="col-sm-10 store-item-label">iPhone Armband Case</div>
+                                        <div class="col-md-2 col-xs-12">
+                                            <a href="checkout.html"><button type="button"  class="btn btn-warning store"> Buy</button></a> </div>
+                                        <div class="col-sm-12 store-item-price">$24.99</div>
+                                        <div class="col-sm-12 store">40% OFF!</div>
+                                        
+                                    </div>
+                                </div>  
+                           
+                                <div class="col-lg-6 col-sm-12 store-item">
+                                    
+                                        <a href="checkout.html"><img src="img/bikeclip.png" class="img-store"></a>
+                                    
+                                     <div class="store-item-info">
+                                        <div class="col-sm-10 store-item-label">iPhone Bike Mount Clip</div>
+                                       <div class="col-md-2 col-xs-12">
+                                            <a href="checkout.html"><button type="button"  class="btn btn-warning store"> Buy</button></a> </div>
+                                        <div class="col-md-12 store-item-price">$24.99</div>
+                                        <div class="col-sm-12 store">10% OFF!</div>
+                                    </div>
+                                </div>
+                          
+                             
+
+                        </div><!-- END  row -->
+                        
+                        
+                </div><!-- END orders -->
+
+
+                    </div><!-- END Page Content -->
+
+                         <!-- - - - - - - - - - - - - - -  Footer - - - - - - -  - - - - - - -  - - - - - - -  -->
+                <footer class="clearfix ">
+                     <div class="col-lg-3 col-md-6 col-sm-12 footer-margin-80">
+                      <a href="index.html" ><img src="img/logo.png" class="footer-img"></a>
+                    </div> 
+                    <div class="col-lg-3 col-md-6 col-sm-12  footer-margin-70">
+                      <p class="footer-text">TURBOSTRAPP, 1562 FIRST AVE #205-2089
+                        <br>NEW YORK, NY 10028-4004
+                        <br>1-866-534-6777 | <a href="mailto:info@turbostrapp.com">INFO@TURBOSTRAPP.COM</a></p>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 footer-margin-80">
+                      <p><a href="http://turboroster.com/Privacy-Policy">PRIVACY POLICY</a> 
+                        | <a href="http://turboroster.com/Terms-And-Conditions">TERMS AND CONDITION</a>  
+                        | <a href="http://turboroster.com/Jobs">JOBS </a> 
+                        <br><a href="http://turboroster.com/Ambassadors">BECOME A BRAND AMBASSADOR </a> 
+                        | <a href="http://turboroster.com/Partnerships">PARTNERSHIPS</a> </p>
+                    
+                    </div>                   
+                    
+                        <!--ul class="footer-icons pull-right" style="list-style-type: none; display: inline; margin: 0; padding: 0;"-->
+                     <ul class=" col-lg-3 col-md-6 col-sm-12 nav navbar-nav footer-icons-nav footer-margin-70" style="list-style-type: none; display: inline;">    
+                    
+                        <li class="footer-icons ">
+                            <a href="http://facebook.com/turboroster" data-placement="top" data-toggle="tooltip" title="" data-original-title="Our facebook page" target="_blank" style="margin-right: -20px; margin-top:-10px;"><img src="img/icons/facebook.png"></a>
+                        </li>
+                        <li class="footer-icons pull-left">
+                            <a href="http://twitter.com/turboroster" data-placement="top" data-toggle="tooltip" title="" data-original-title="Our twitter account" target="_blank" style="margin-right: -20px; margin-top:-10px;"><img src="img/icons/twitter.png"></a>
+                        </li>
+                         <li class="footer-icons pull-left">
+                            <a  href="http://youtube.com/turboroster" data-placement="top" data-toggle="tooltip" title="" data-original-title="Watch us on Youtube" target="_blank" style="margin-right: -20px; margin-top:-10px;"><img src="img/icons/youtube.png"></a>
+                        </li>
+                         <li class="footer-icons pull-left">
+                            <a  href="https://instagram.com/turboroster/" data-placement="top" data-toggle="tooltip" title="" data-original-title="Our instagram account" target="_blank" style="margin-right: -20px; margin-top:-10px;"><img src="img/icons/instagram.png"></a>
+                        </li>
+                        <!-- - - - - -  No Account yet - - - - - - - - - - 
+                        <li class="footer-icons">
+                            <a  href="http://plus.google.com/turboroster" data-placement="top" data-toggle="tooltip" title="" data-original-title="Check us out on Google Plus" target="_blank"><img src="img/icons/google.png"></a>
+                        </li>
+                        <li class="footer-icons">
+                            <a href="http://linkedin.com/turboroster" data-placement="top" data-toggle="tooltip" title="" data-original-title="Our Linked In profile" target="_blank"> <img src="img/icons/linkedin.png"></a>
+                        </li>
+                        - - - - - - - - - - -->
+                       
+                      </ul>
+                </footer>
+                     <!-- - - - - - - - - - - - - - -  END Footer - - - - - - -  - - - - - - -  - - - - - - -  -->
+
+                </div>
+                <!-- END Main Container -->
+            </div>
+            <!-- END Page Container -->
+        </div>
+        <!-- END Page Wrapper -->
+
+        <!-- Scroll to top link, initialized in js/app.js - scrollToTop() -->
+        <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
+
+        
+         <!-- User Settings, modal which opens from Settings link (found in top right user menu) and the Cog link (found in sidebar user info) -->
+        <div id="modal-user-settings" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h2 class="modal-title"><i class="fa fa-pencil"></i> Settings</h2>
+                    </div>
+                    <!-- END Modal Header -->
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
+                            <fieldset>
+                                <legend>Personal Information</legend>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Username</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">Admin</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="user-settings-email">Email</label>
+                                    <div class="col-md-8">
+                                        <input type="email" id="user-settings-email" name="user-settings-email" class="form-control" placeholder="admin@example.com">
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label class=" col-md-4 control-label" for="example-file-input">Upload Profile photo</label>
+                                    <div class="col-md-8">
+                                            <input type="file" id="example-file-input" name="example-file-input">
+                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class=" col-md-4 control-label" for="example-file-input">Upload Dashboard Background</label>
+                                    <div class="col-md-8">
+                                            <input type="file" id="example-file-input" name="example-file-input">
+                                     </div>
+                                </div>
+
+                                <!-- Theme Colors -->
+                                  <div class="form-group">
+                                    <label class="col-md-4 control-label" for="cvv">Change theme</label>
+                                    <div class="col-md-8">
+                                        <!-- Change Color Theme functionality can be found in js/app.js - templateOptions() -->
+                                        <ul class="sidebar-section sidebar-themes clearfix sidebar-nav-mini-hide">
+                                            <!-- You can also add the default color theme -->
+                                            <li class="active">
+                                                <a href="javascript:void(0)" class="themed-background-dark-default themed-border-default" data-theme="default" data-toggle="tooltip" title="Default Blue"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-night themed-border-night" data-theme="css/themes/night.css" data-toggle="tooltip" title="Night"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-amethyst themed-border-amethyst" data-theme="css/themes/amethyst.css" data-toggle="tooltip" title="Amethyst"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-modern themed-border-modern" data-theme="css/themes/modern.css" data-toggle="tooltip" title="Modern"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-flatie themed-border-flatie" data-theme="css/themes/flatie.css" data-toggle="tooltip" title="Flatie"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-spring themed-border-spring" data-theme="css/themes/spring.css" data-toggle="tooltip" title="Spring"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-fancy themed-border-fancy" data-theme="css/themes/fancy.css" data-toggle="tooltip" title="Fancy"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-fire themed-border-fire" data-theme="css/themes/fire.css" data-toggle="tooltip" title="Fire"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-coral themed-border-coral" data-theme="css/themes/coral.css" data-toggle="tooltip" title="Coral"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-lake themed-border-lake" data-theme="css/themes/lake.css" data-toggle="tooltip" title="Lake"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-waterlily themed-border-waterlily" data-theme="css/themes/waterlily.css" data-toggle="tooltip" title="Waterlily"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-emerald themed-border-emerald" data-theme="css/themes/emerald.css" data-toggle="tooltip" title="Emerald"></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="themed-background-dark-blackberry themed-border-blackberry" data-theme="css/themes/blackberry.css" data-toggle="tooltip" title="Blackberry"></a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <!-- END Theme Colors -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="card-holder-name">Name on Card</label>
+                                    <div class="col-md-8">
+                                      <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="card-number">Card Number</label>
+                                    <div class="col-md-8">
+                                      <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="expiry-month">Expiration Date</label>
+                                    <div class="col-md-8">
+                                      <div class="row">
+                                        <div class="col-xs-4">
+                                          <select class="form-control col-sm-3" name="expiry-month" id="expiry-month">
+                                            <option>Month</option>
+                                            <option value="01">Jan (01)</option>
+                                            <option value="02">Feb (02)</option>
+                                            <option value="03">Mar (03)</option>
+                                            <option value="04">Apr (04)</option>
+                                            <option value="05">May (05)</option>
+                                            <option value="06">June (06)</option>
+                                            <option value="07">July (07)</option>
+                                            <option value="08">Aug (08)</option>
+                                            <option value="09">Sep (09)</option>
+                                            <option value="10">Oct (10)</option>
+                                            <option value="11">Nov (11)</option>
+                                            <option value="12">Dec (12)</option>
+                                          </select>
+                                        </div>
+                                        <div class="col-xs-3">
+                                          <select class="form-control" name="expiry-year">
+                                            <option value="15">2015</option>
+                                            <option value="16">2016</option>
+                                            <option value="17">2017</option>
+                                            <option value="18">2018</option>
+                                            <option value="19">2019</option>
+                                            <option value="20">2020</option>
+                                            <option value="21">2021</option>
+                                            <option value="22">2022</option>
+                                            <option value="23">2023</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="cvv">Card CVV</label>
+                                    <div class="col-md-4">
+                                      <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
+                                    </div>
+                                  </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Password Update</legend>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="user-settings-password">New Password</label>
+                                    <div class="col-md-8">
+                                        <input type="password" id="user-settings-password" name="user-settings-password" class="form-control" placeholder="Please choose a complex one..">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="user-settings-repassword">Confirm New Password</label>
+                                    <div class="col-md-8">
+                                        <input type="password" id="user-settings-repassword" name="user-settings-repassword" class="form-control" placeholder="..and confirm it!">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="form-group form-actions"  style="margin-bottom:50px;">
+                                <div class="col-xs-12 text-right">
+                                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END Modal Body -->
+                </div>
+            </div>
+        </div>
+        <!-- END User Settings modal-->
+
+        <!-- Remember to include excanvas for IE8 chart support -->
+        <!--[if IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]-->
+
+        <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.2.min.js"%3E%3C/script%3E'));</script>
+
+        <!-- Bootstrap.js, Jquery plugins and Custom JS code -->
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- Load and execute javascript code used only in this page -->
+        <script src="js/pages/index.js"></script>
+        <script>$(function(){ Index.init(); });</script>
+
+         <!-- Load and execute javascript code used only for calendar-->
+        <script src="js/pages/compCalendar.js"></script>
+        <script>$(function(){ CompCalendar.init(); });</script>
+
+           <!-- Load and execute javascript code for bar charts used only in this page -->
+        <script src="js/pages/widgetsStats.js"></script>
+        <script>$(function(){ WidgetsStats.init(); });</script>
+    </body>
+</html>
