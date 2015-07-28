@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>TURBOSTRAPP</title>
+    <meta name="description" content="TURBO-STRAPP: An app that delivers accurate results through heart rate, personal metrics, and the MET computation table.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/icon180.png" sizes="180x180">
+    <!-- END Icons -->
+    <!-- Stylesheets -->
+    <!-- Bootstrap is included in its original form, unaltered
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Related styles of various icon packs and plugins -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+    <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+    <link rel="stylesheet" href="css/themes.css">
+    <!-- END Stylesheets -->
+    <!-- Modernizr (browser feature detection library) & Respond.js (enables responsive CSS code on browsers that don't support it, eg IE8) -->
+    <script src="js/vendor/modernizr-respond.min.js"></script>
+    <!-- Jquery upload -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+     <!-- This is important for the Toggle to say if clients want to pay or members to pay -->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+</head>
+<!-- User Settings, modal which opens from Settings link (found in top right user menu) and the Cog link (found in sidebar user info) -->
+
+<div id="modal-user-settings" class="modal fade in" tabindex="-1" role="dialog" aria-hidden="false" style="display: block; padding-left: 0px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <div class="form-horizontal form-bordered">
+                    
+                    <div class="form-group">
+                        
+                        <div class="col-md-12">
+                            <p class="form-control-static">
+                            <h3><b>Welcome to the TurboSTRAPP platform!</b></h3><h4 style="line-height: 24px;"> Earn a new stream of monthly revenue, retain your members, and monitor their progress from anywhere.   Your first 2 members are on us, however we still need to verify your account with a credit card.  Every client beyond the first 2 will have a $4.99 per month charge.  Enjoy!
+                            </h4></p>
+                        </div>
+                    </div>
+                    
+                    <fieldset>
+                        <legend><img src="/img/placeholders/avatars/person.png" alt="avatar" style="height:30px;">Personal Information</legend>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Email</label>
+                            <div class="col-md-8">
+                                <p class="form-control-static">
+                                christamarie.c@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="user-settings-email">First Name</label>
+                            <div class="col-md-8">
+                                <input name="ctl00$txt_SettingsFirstName" type="text" value="Christa" id="txt_SettingsFirstName" class="form-control" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="user-settings-email">Last Name</label>
+                            <div class="col-md-8">
+                                <input name="ctl00$txt_SettingsLastName" type="text" value="Clark" id="txt_SettingsLastName" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class=" col-md-4 control-label" for="example-file-input">Upload Profile photo</label>
+                            <div class="col-md-8">
+                                <input type="file" name="ctl00$upload_Photo" id="upload_Photo">
+                            </div>
+                        </div>
+                        <!-- Theme Colors -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="cvv">Change theme</label>
+                            <div class="col-md-8">
+                                <!-- Change Color Theme functionality can be found in js/app.js - templateOptions() -->
+                                <ul class="sidebar-section sidebar-themes clearfix sidebar-nav-mini-hide">
+                                    <!-- You can also add the default color theme -->
+                                    <li class="active">
+                                        <a href="javascript:void(0)" class="themed-background-dark-default themed-border-default" data-theme="default" data-toggle="tooltip" title="" data-original-title="Default Blue"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-night themed-border-night" data-theme="/css/themes/night.css" data-toggle="tooltip" title="" data-original-title="Night"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-amethyst themed-border-amethyst" data-theme="/css/themes/amethyst.css" data-toggle="tooltip" title="" data-original-title="Amethyst"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-modern themed-border-modern" data-theme="/css/themes/modern.css" data-toggle="tooltip" title="" data-original-title="Modern"></a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="javascript:void(0)" class="themed-background-dark-flatie themed-border-flatie" data-theme="/css/themes/flatie.css" data-toggle="tooltip" title="" data-original-title="Flatie"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-spring themed-border-spring" data-theme="/css/themes/spring.css" data-toggle="tooltip" title="" data-original-title="Spring"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-fancy themed-border-fancy" data-theme="/css/themes/fancy.css" data-toggle="tooltip" title="" data-original-title="Fancy"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-fire themed-border-fire" data-theme="/css/themes/fire.css" data-toggle="tooltip" title="" data-original-title="Fire"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-coral themed-border-coral" data-theme="/css/themes/coral.css" data-toggle="tooltip" title="" data-original-title="Coral"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-lake themed-border-lake" data-theme="/css/themes/lake.css" data-toggle="tooltip" title="" data-original-title="Lake"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-waterlily themed-border-waterlily" data-theme="/css/themes/waterlily.css" data-toggle="tooltip" title="" data-original-title="Waterlily"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-emerald themed-border-emerald" data-theme="/css/themes/emerald.css" data-toggle="tooltip" title="" data-original-title="Emerald"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="themed-background-dark-blackberry themed-border-blackberry" data-theme="/css/themes/rustic.css" data-toggle="tooltip" title="" data-original-title="Rustic"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- END Theme Colors -->
+                    </fieldset>
+                    
+                    
+                    <fieldset>
+                        <legend>  
+                          <a href="#"><img src="img/visa.png" style="height:30px;"></a>
+                        <a href="#"><img src="img/mastercard.png" style="height:30px;"></a>
+                        <a href="#"><img src="img/amex.png" style="height:30px;"></a>
+                        Billing
+                   </legend>
+                        <div class="form-group">
+                             <div class="col-md-4 control-label">
+                            <input type="checkbox" checked data-toggle="toggle" data-size="small" data-onstyle="info">
+                        </div>
+                            <div class="col-md-8">
+                                <p class="form-control-static">Do you want the member to pay?</p>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label" for="card-holder-name">Status</label>
+                            <div class="col-md-8">
+                                <p class="form-control-static">No active card on file.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="card-holder-name">Name on Card</label>
+                            <div class="col-md-8">
+                                <input name="ctl00$txt_SettingsNameOnCard" type="text" id="txt_SettingsNameOnCard" placeholder="Card Holder's Name" class="form-control">
+                                
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="card-number">Card Number</label>
+                            <div class="col-md-8">
+                                <input name="ctl00$txt_SettingsCardNumber" type="text" id="txt_SettingsCardNumber" class="form-control" placeholder="Debit/Credit Card Number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="expiry-month">Expiration Date</label>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <select name="ctl00$sel_SettingsCreditCardExpMonth" id="sel_SettingsCreditCardExpMonth" class="form-control col-sm-3">
+                                            <option value="01">Jan (01)</option>
+                                            <option value="02">Feb (02)</option>
+                                            <option value="03">Mar (03)</option>
+                                            <option value="04">Apr (04)</option>
+                                            <option value="05">May (05)</option>
+                                            <option value="06">June (06)</option>
+                                            <option value="07">July (07)</option>
+                                            <option value="08">Aug (08)</option>
+                                            <option value="09">Sep (09)</option>
+                                            <option value="10">Oct (10)</option>
+                                            <option value="11">Nov (11)</option>
+                                            <option value="12">Dec (12)</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <select name="ctl00$sel_SettingsCreditCardExpYear" id="sel_SettingsCreditCardExpYear" class="form-control col-sm-4">
+                                            <option value="2015">2015</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="cvv">Card CVV</label>
+                            <div class="col-md-4">
+                                <input name="ctl00$txt_Cvv" type="text" id="txt_Cvv" class="form-control" placeholder="Security Code">
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                    </fieldset>
+                    
+                    
+                </div>
+            </div>
+            <!-- END Modal Body -->
+            <div class="modal-footer">
+                
+                <a id="btn_SaveSettings" class="btn btn-sm btn-primary" href="javascript:__doPostBack('ctl00$btn_SaveSettings','')">Save Changes</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Remember to include excanvas for IE8 chart support -->
+<!--[if IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]-->
+<!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.2.min.js"%3E%3C/script%3E'));</script>  -->
+<!-- Bootstrap.js, Jquery plugins and Custom JS code -->
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/app.js"></script>
+<!-- Load and execute javascript code used only in this page -->
+<script src="js/pages/index.js"></script>
+<script>$(function(){ Index.init(); });</script>
+<!-- Load and execute javascript code used only for calendar-->
+<script src="js/pages/compCalendar.js"></script>
+<script>$(function(){ CompCalendar.init(); });</script>
+<!-- Load and execute javascript code for bar charts used only in this page -->
+<script src="js/pages/widgetsStats.js"></script>
+<script>$(function(){ WidgetsStats.init(); });</script>
+<!-- This makes the modal open on the page load-->
+<script type="text/javascript">
+$(window).load(function(){
+$('#modal-user-settings').modal('show');
+});
+</script>
+</body>
+</html>

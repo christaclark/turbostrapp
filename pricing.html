@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>TURBOSTRAPP</title>
+    <meta name="description" content="TURBO-STRAPP: An app that delivers accurate results through heart rate, personal metrics, and the MET computation table.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/icon180.png" sizes="180x180">
+    <!-- END Icons -->
+    <!-- Stylesheets -->
+    <!-- Bootstrap is included in its original form, unaltered
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Related styles of various icon packs and plugins -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+    <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+    <link rel="stylesheet" href="css/themes.css">
+    <!-- END Stylesheets -->
+    <!-- Modernizr (browser feature detection library) & Respond.js (enables responsive CSS code on browsers that don't support it, eg IE8) -->
+    <script src="js/vendor/modernizr-respond.min.js"></script>
+    <!-- Jquery upload -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- This is important for the Toggle to say if clients want to pay or members to pay -->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+</head>
+<!-- User Settings, modal which opens from Settings link (found in top right user menu) and the Cog link (found in sidebar user info) -->
+<br><br><br>
+<div class="table-responsive col-sm-8 col-sm-offset-2">
+    <table class="table table-borderless table-pricing">
+        <thead>
+            <tr>
+                <th>Small</th>
+                <th class="table-featured"> Suggested</th>
+                <th>Large</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td><strong>monthly</strong> report</td>
+                <td class="table-featured"><strong>monthly</strong> report</td>
+                <td><strong>monthly</strong> report</td>
+            </tr>
+            <tr>
+                <td><strong>monthly</strong> feedback</td>
+                <td class="table-featured"><strong>weekly</strong> feedback</td>
+                <td><strong>daily</strong> feedback</td>
+            </tr>
+            
+            <tr>
+                <td><strong>3</strong> weekly workouts</td>
+                <td class="table-featured"><strong>6</strong> weekly workouts</td>
+                <td><strong>10</strong> weekly workouts</td>
+            </tr>
+            <tr>
+                <td><strong>3</strong> weekly nutritional tips</td>
+                <td class="table-featured"><strong>7</strong> weekly nutritional tips</td>
+                <td><strong>14</strong> weekly nutritional tips</td>
+            </tr>
+            <tr>
+                <td><strong> none</td>
+                <td class="table-featured"><strong>web</strong>  session</td>
+                <td><strong>group or web</strong> session </td>
+            </tr>
+         
+            <tr>
+                <td class="table-price">
+                    <h1>$15<br><small>per month</small></h1>
+                </td>
+                <td class="table-price table-featured">
+                    <h1>$50<br><small>per month</small></h1>
+                </td>
+                <td class="table-price">
+                    <h1>$100<br><small>per month</small></h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="javascript:void(0)" class="btn btn-primary"> Get Started </a>
+                </td>
+                <td class="table-featured">
+                    <a href="javascript:void(0)" class="btn btn-primary"> Get Started </a>
+                </td>
+                <td>
+                    <a href="javascript:void(0)" class="btn btn-primary"> Get Started </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Bootstrap.js, Jquery plugins and Custom JS code -->
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/app.js"></script>
+<!-- Load and execute javascript code used only in this page -->
+<script src="js/pages/index.js"></script>
+<script>$(function(){ Index.init(); });</script>
+<!-- Load and execute javascript code used only for calendar-->
+<script src="js/pages/compCalendar.js"></script>
+<script>$(function(){ CompCalendar.init(); });</script>
+<!-- Load and execute javascript code for bar charts used only in this page -->
+<script src="js/pages/widgetsStats.js"></script>
+<script>$(function(){ WidgetsStats.init(); });</script>
+<!-- This makes the modal open on the page load-->
+<script type="text/javascript">
+$(window).load(function(){
+$('#modal-user-settings').modal('show');
+});
+</script>
+</body>
+</html>
