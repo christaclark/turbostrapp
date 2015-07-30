@@ -1998,22 +1998,45 @@ a[data-toggle="lightbox-image"]:hover img {
     background-color: #f9f9f9;
 }
 
-.table-pricing.table-featured .table-price,
+.table-pricing.table-featured .table-price, 
 .table-pricing .table-price.table-featured {
-    background-color: #252525;
+    background-color: #ffffff;
 }
 
-.table-pricing.table-featured th,
+.table-pricing.table-featured th, 
 .table-pricing th.table-featured {
-    background-color: #1bbae1;
-    border-bottom: 2px solid #394263;
+    background-color: #E96900;
+    border-bottom: #EAEDF1;
     color: #ffffff;
 }
 
-.table-pricing.table-featured td,
+.table-pricing.table-featured td, 
 .table-pricing td.table-featured {
+    background-color: #f9f9f9;
+    color: #3E4666;
+}
+
+/* regular table */
+.table-pricing .table-price-minimum {
+    background-color: #f9f9f9;
+}
+
+.table-pricing.table-minimum .table-price, 
+.table-pricing .table-price.table-minimum {
+    background-color: #F9F9F9;
+}
+
+.table-pricing.table-minimum th, 
+.table-pricing th.table-minimum {
     background-color: #394263;
+    border-bottom: #EAEDF1;
     color: #ffffff;
+}
+
+.table-pricing.table-minimum td, 
+.table-pricing td.table-minimum {
+    background-color: #FFFFFF;
+    color: #3E4666;
 }
 
 /* Chat UI */
@@ -3264,6 +3287,21 @@ fieldset[disabled] .btn-default.active {
     border-color: #eaedf1;
 }
 
+.btn-dark {
+    background-color: #4387C1;
+    border-color: #4387C1;
+    color: #ffffff;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    margin-right: 15px !important;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+
+
 .btn-primary {
 background-color: #6ad2eb;
   border-color: #1bbae1;
@@ -3278,7 +3316,9 @@ background-color: #6ad2eb;
   margin-top: 5px !important;
 }
 
+
 }
+
 
 .btn-primary.btn-alt {
     background-color: #ffffff;

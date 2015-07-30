@@ -1,3 +1,5 @@
+/* this is the CSS for the pricing table that slides the amounts back and forth */
+
 body {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -74,7 +76,7 @@ body {
 }
 
 h4.great {
-	background: #00ac98;
+	background: #E96900;
 	margin: 0 0 25px -60px;
 	padding: 7px 15px;
 	color: #ffffff;
