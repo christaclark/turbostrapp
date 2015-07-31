@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turbostrapp Pricing</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Jquery upload -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="price-box col-md-6 ">
+
+        <form class="form-horizontal form-pricing" role="form">
+
+          <div class="price-slider">
+            <h4 class="great">Monthly</h4>
+            <span>$15 a month is suggested </span>
+            <div class="col-sm-12">
+              <div id="slider"></div>
+            </div>
+          </div>
+           <div class="price-slider">
+                 <div class="table-responsive col-sm-4">
+                        <br>
+                    <table class="table table-borderless table-pricing">
+                        <thead>
+                            <tr>
+                                <th>$15</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-minimum">Activity feed </td>
+                            </tr>
+                            <tr>
+                                <td class="table-minimum">3 workout plans per week  </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="table-minimum">3 nutritional tips per week </td>
+                            </tr>
+                            <tr>
+                                <td class="table-minimum">Feedback</td>
+                            </tr>
+                              <tr>
+                                <td class="table-minimum">Share monthly report</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                   <div class="table-responsive col-sm-4">
+                        <br>
+                    <table class="table table-borderless table-pricing">
+                        <thead>
+                            <tr>
+                                <th>$100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-minimum">Activity feed </td>
+                            </tr>
+                            <tr>
+                                <td class="table-minimum">6 workout plans per week </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="table-minimum">14 nutritional tips per week </td>
+                            </tr>
+                            <tr>
+                                <td class="table-minimum">Daily feedback</td>
+                            </tr>
+                              <tr>
+                                <td class="table-minimum">Group session or web session</td>
+                            </tr>
+                              <tr>
+                                <td class="table-minimum">Share monthly report</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                   <div class="table-responsive col-sm-4">
+                        <br>
+                    <table class="table table-borderless table-pricing">
+                        <thead>
+                            <tr>
+                                <th>$400</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-minimum">Instant activity feedback </td>
+                            </tr>
+                            <tr>
+                                <td class="table-minimum">Daily workout plans </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="table-minimum">Daily national plans </td>
+                            </tr>
+                            <tr>
+                                <td class="table-minimum">Guidance on workout results from wearable data</td>
+                            </tr>
+                              <tr>
+                                <td class="table-minimum">4 in-person consultations per month</td>
+                            </tr>
+                              <tr>
+                                <td class="table-minimum">Share monthly report</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+
+          </div>
+          <div class="price-slider">
+            <h4 class="great">Members</h4>
+            <span>We deduct $1 a month per member</span>
+            <div class="col-sm-12">
+              <div id="slider2"></div>
+            </div>
+          </div>
+
+          <div class="price-form">
+
+            <div class="form-group">
+              <label for="amount" class="col-sm-6 control-label">Amount ($): </label>
+              <span class="help-text">Please choose your tier level</span>
+              <div class="col-sm-6">
+                <input type="hidden" id="amount" class="form-control">
+                <p class="price lead" id="amount-label"></p>
+                <span class="price">.00</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="duration" class="col-sm-6 control-label">Members: </label>
+              <span class="help-text">We deduct $1 a month for every memeber you have</span>
+              <div class="col-sm-6">
+                <input type="hidden" id="duration" class="form-control">
+                <p class="price lead" id="duration-label"></p>
+                <span class="price">members</span>
+              </div>
+            </div>
+            <hr class="style">
+            <div class="form-group total">
+              <label for="total" class="col-sm-6 control-label"><strong>Total: </strong></label>
+              <div class="col-sm-6">
+                <input type="hidden" id="total" class="form-control">
+                <p class="price lead" id="total-label"></p>
+                <span class="price">.00</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-dark btn-lg btn-block">Subscribe<span class="glyphicon glyphicon-chevron-right pull-right" style="padding-right: 10px;"></span></button>
+            </div>
+          </div>
+
+        </form>
+
+       
+
+      </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- Change the Max and Min numbers  on the script below -->
+    <script>
+      $(document).ready(function() {
+          $("#slider").slider({
+              range: "min",
+              animate: true,
+              value:1,
+              min: 15,
+              max: 500, 
+              step: 10,
+              slide: function(event, ui) {
+                update(1,ui.value); //changed
+              }
+          });
+
+          $("#slider2").slider({
+              range: "min",
+              animate: true,
+              value:5,
+              min: 1,
+              max: 50,
+              step: 1,
+              slide: function(event, ui) {
+                update(2,ui.value); //changed
+              }
+          });
+
+          //Added, set initial value.
+          $("#amount").val(15);
+          $("#duration").val(0);
+          $("#amount-label").text(0);
+          $("#duration-label").text(0);
+          
+          update();
+      });
+
+      //changed. now with parameter
+      function update(slider,val) {
+        //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
+        var $amount = slider == 1?val:$("#amount").val();
+        var $duration = slider == 2?val:$("#duration").val();
+
+        /* commented
+        $amount = $( "#slider" ).slider( "value" );
+        $duration = $( "#slider2" ).slider( "value" );
+         */
+
+         $total = "$" + ($amount - $duration);
+         $( "#amount" ).val($amount);
+         $( "#amount-label" ).text($amount);
+         $( "#duration" ).val($duration);
+         $( "#duration-label" ).text($duration);
+         $( "#total" ).val($total);
+         $( "#total-label" ).text($total);
+
+         $('#slider a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$amount+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
+         $('#slider2 a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$duration+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
+      }
+
+    </script>
+  </body>
+</html>

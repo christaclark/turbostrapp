@@ -9,57 +9,37 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/pricing.css">
     <link rel="shortcut icon" href="img/favicon.png">
+    <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Jquery upload -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
   </head>
   <body>
-    <div class="container">
+    <div class="container col-md-5 col-md-offset-3 ">
 
-      <div class="price-box">
+      <div class="price-box ">
 
         <form class="form-horizontal form-pricing" role="form">
 
           <div class="price-slider">
-            <h4 class="great">Monthly</h4>
-            <span>$15 a month is suggested </span>
+            <h4 class="great col-sm-3">Monthly</h4>
+            <span class="col-sm-9">Move the slider to the fee you would like us to charge your members per month</span>
             <div class="col-sm-12">
               <div id="slider"></div>
             </div>
           </div>
-          <div class="price-slider">
-            <h4 class="great">Members</h4>
-            <span>We deduct $1 a month per member</span>
-            <div class="col-sm-12">
-              <div id="slider2"></div>
-            </div>
-          </div>
+
 
           <div class="price-form">
 
             <div class="form-group">
               <label for="amount" class="col-sm-6 control-label">Amount ($): </label>
-              <span class="help-text">Please choose your tier level</span>
+              <span class="help-text">Credit card fees will apply
+              <br>Turbo-STRAPP will subtract $5 per member, per month</span>
               <div class="col-sm-6">
                 <input type="hidden" id="amount" class="form-control">
                 <p class="price lead" id="amount-label"></p>
-                <span class="price">.00</span>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="duration" class="col-sm-6 control-label">Members: </label>
-              <span class="help-text">We deduct $1 a month for every memeber you have</span>
-              <div class="col-sm-6">
-                <input type="hidden" id="duration" class="form-control">
-                <p class="price lead" id="duration-label"></p>
-                <span class="price">members</span>
-              </div>
-            </div>
-            <hr class="style">
-            <div class="form-group total">
-              <label for="total" class="col-sm-6 control-label"><strong>Total: </strong></label>
-              <span class="help-text">(Amount * Days)</span>
-              <div class="col-sm-6">
-                <input type="hidden" id="total" class="form-control">
-                <p class="price lead" id="total-label"></p>
                 <span class="price">.00</span>
               </div>
             </div>
@@ -68,7 +48,7 @@
 
           <div class="form-group">
             <div class="col-sm-12">
-              <button type="submit" class="btn btn-primary btn-lg btn-block">Subscribe<span class="glyphicon glyphicon-chevron-right pull-right" style="padding-right: 10px;"></span></button>
+              <button type="submit" class="btn btn-dark btn-lg btn-block">Subscribe<span class="glyphicon glyphicon-chevron-right pull-right" style="padding-right: 10px;"></span></button>
             </div>
           </div>
 
@@ -85,6 +65,7 @@
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
+<!-- Change the Max and Min numbers  on the script below -->
     <script>
       $(document).ready(function() {
           $("#slider").slider({
@@ -92,7 +73,7 @@
               animate: true,
               value:1,
               min: 15,
-              max: 100,
+              max: 500, 
               step: 10,
               slide: function(event, ui) {
                 update(1,ui.value); //changed
@@ -102,8 +83,8 @@
           $("#slider2").slider({
               range: "min",
               animate: true,
-              value:1,
-              min: 1,
+              value:5,
+              min: 0,
               max: 50,
               step: 1,
               slide: function(event, ui) {

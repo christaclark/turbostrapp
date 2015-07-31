@@ -2000,7 +2000,7 @@ a[data-toggle="lightbox-image"]:hover img {
 
 .table-pricing.table-featured .table-price, 
 .table-pricing .table-price.table-featured {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
 }
 
 .table-pricing.table-featured th, 
@@ -2012,10 +2012,9 @@ a[data-toggle="lightbox-image"]:hover img {
 
 .table-pricing.table-featured td, 
 .table-pricing td.table-featured {
-    background-color: #f9f9f9;
+        background-color: #ffffff;
     color: #3E4666;
 }
-
 /* regular table */
 .table-pricing .table-price-minimum {
     background-color: #f9f9f9;
@@ -3215,7 +3214,7 @@ li.dropdown-header {
     margin-top: 0;
     padding: 14px 15px 15px;
     border-top: 1px solid #eeeeee;
-    background-color: #f9f9f9;
+    background-color:  #E6E6E6;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
